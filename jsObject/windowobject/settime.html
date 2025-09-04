@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval </title>
+</head>
+<body>
+    <h2>setimeout</h2>
+    <button onclick="chngpss()">change name</button>
+    <h2 id="pmt"></h2>
+</body>
+<script>
+    function chngpss(){
+    var data=  prompt('emter your name')
+
+     setTimeout( msg()
+ ,2000);
+
+ 
+  function msg(){
+     document.getElementById('pmt').innerText="succesfully change "+data;
+  }
+}
+</script>
+</html>

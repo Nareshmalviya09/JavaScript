@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>byClassName</title>
+</head>
+
+<body>
+    <h1>byClassName</h1>
+    <div>
+        <h2 class="para">para</h2>
+        <p class="para"> paragrapgh</p>
+        <input class="para" type="text" value="nanks" name="" id="">
+    </div>
+</body>
+</html>
+<script>
+var clas_name= document.getElementsByClassName('para')
+console.log(clas_name)
+for(i=0;i<clas_name.length;i++){
+    console.log(clas_name[i].innerHTML);
+}
+
+</script>
+<style>
+    .para {
+        color: red;
+    }
+</style>

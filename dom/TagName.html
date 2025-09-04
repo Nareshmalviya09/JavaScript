@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByTagName</title>
+</head>
+<body>
+    <h1>getElementByTagName1</h1>
+    <h1>getElementByTagName2</h1>
+    <h1>getElementByTagName3</h1>
+    <h1>getElementByTagName4</h1>
+    
+     <button onclick="chng()">change all h1</button>
+</body>
+<script>
+    function chng(){
+        var tag= document.getElementsByTagName('h1')
+   console.log(tag)
+   for(i=0;i<tag.length;i++){
+    tag[i].innerText="naresh "+i
+   }
+    }
+   
+</script>
+</html>

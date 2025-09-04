@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementById</title>
+</head>
+
+<body>
+    <!-- <h1>GetElementById</h1>
+    <p id="name">Naresh Malviya</p>
+    <a id="link" href="https://www.google.com/">google</a>
+    <br>
+  
+    <br>
+    <button onclick="changname()">change name</button> -->
+    <!-- <p id="show-name"></p>
+    <input type="text" value="Naresh" id="name">
+    <button onclick="checkinput()">submit</button> -->
+
+
+
+
+     <p id="show-name"></p>
+    <input onkeyup="checkinput()" type="text" id="name">
+
+</body>
+<script>
+    //      var name= document.getElementById('name').innerText
+    //     function changname(){
+
+    //         var name= document.getElementById('name')
+    //         name.innerText="raja kumar"
+    //         name.style.color="red"
+    //         name.style.backgroundColor="#000"
+    //         name.style.fontSize="100px"
+    //         var link= document.getElementById('link')
+    //         link.href="https://www.youtube.com/"
+    //         var link1= document.getElementById('link').href
+
+    //         console.log(link1).href
+
+    //     }
+    //    var link= document.getElementById('link').href
+    //    console.log(link)
+
+
+    // function checkinput() {
+    //    var name= document.getElementById('name').value 
+    //    console.log(name)
+    //    document.getElementById('show-name').innerText=name
+    // }
+
+
+        //onwrite on the input box
+        function checkinput() {
+       var name= document.getElementById('name').value 
+
+       if(name.length==10)
+       document.getElementById('show-name').innerText="this isn the valid number "+name
+    else if (name.length>10)
+           document.getElementById('show-name').innerText="this is invalid number " +name 
+    
+    else if (name.length<10)
+           document.getElementById('show-name').innerText=" "  
+    
+    }
+
+
+
+</script>
+
+</html>
