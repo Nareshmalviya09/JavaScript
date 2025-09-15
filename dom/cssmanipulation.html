@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlmanipulation</title>
+</head>
+<body>
+    <h1 id="name" > naresh </h1>
+    <p> cybrom</p>
+    <button onclick="chng_color()" >change</button>
+</body>
+</html>
+<script>
+    function chng_color(){
+       var para=  document.querySelector('p')
+      var name = document.querySelector('#name').style.backgroundColor="green"
+      para.style.fontSize="40px"
+      para.style.backgroundColor="blue"
+    //   name.style.backgroundColor="red"
+    }
+</script>

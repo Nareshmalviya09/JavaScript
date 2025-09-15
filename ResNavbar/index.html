@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <img class="logo" src="./new_logo.jpg" alt="">
+            <h1>FlauntMart</h1>
+
+        </div>
+        <ul class="shown">
+            <li class="mobile"><a href="">Home</a></li>
+            <li class="mobile"><a href="">About</a></li>
+            <li class="mobile"><a href="">Contact</a></li>
+            <li class="bar"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+        <ul class="hide">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Contact</li>
+            <li class="close"><a href="#"><i c class="fa-solid fa-xmark" ></i></a></li>
+        </ul>
+        
+    </nav>
+
+</body>
+<script>
+    const hideEle = document.querySelector(".hide")
+    const barEle = document.querySelector(".bar")
+    const closeEle = document.querySelector(".close")
+    barEle.addEventListener("click",()=>{
+        hideEle.style.display="block";
+        
+    })
+    closeEle.addEventListener("click",()=>{
+        hideEle.style.display = "none";
+        
+    })
+</script>
+</html>

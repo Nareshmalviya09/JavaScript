@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaMart</title>
+    <link rel="stylesheet" href="./stylr.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="./new_logo.jpg" alt="" class="logo">
+            <h1>NovaMart</h1>
+        </div>
+        <ul class="nav">
+            <li class="mobile"><a href="">Home</a></li>
+            <li class="mobile"><a href="">About us</a></li>
+            <li class="mobile"><a href="">Contact Us</a> </li>
+            <li class="mobile"><a href="">Services</a></li>
+            <li onclick="shownav()" id="menu-btn" class="bar"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+        <ul class="hide">
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact Us</a> </li>
+            <li><a href="">Services</a></li>
+            <li onclick="hidnav()"><a href="#"><i c class="fa-solid fa-xmark" ></i></a></li>
+
+             
+        </ul>
+    </nav>
+    <section class="hero">
+        <img src="./bgimg.webp" alt="" class="bg">
+        <div class="hero1">
+            <span class="first">Welcome to MyWebsite</span>
+            <span class="secound">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus eum harum inventore? Itaque esse nemo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque eius consequuntur, totam quaerat asperiores </span>
+            <form action="">
+                <input type="text" placeholder="Enter your E-mail" name="" id="">
+                <label class="ll" for="">Subscribe</label>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="hero2">
+        <div class="left1">
+            <p>
+                <span class="bigtext">What is codding ?  </span>
+                <span class="smalltext">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit natus error porro beatae, dolor nemo voluptatibus sunt, vel similique aut, doloremque quae incidunt ipsa eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellendus et facilis minus fugit, laboriosam natus eius earum sequi consectetur saepe, nisi dignissimos sunt tempora similique velit officia ad laudantium odio facere rerum minima? Accusantium voluptatum labore eligendi. Non, incidunt. Facere itaque mollitia culpa odit labore porro veniam nobis ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta omnis distinctio praesentium enim quam libero architecto fugit quidem incidunt id laudantium laborum illo maxime explicabo optio ducimus officia delectus inventore iusto eligendi perferendis, impedit assumenda nostrum mollitia? Suscipit, ratione iure!
+                </span>
+            </p>
+        </div>
+        <div class="right1">
+        <img  src="./programming-background-with-person-working-with-codes-computer.jpg " alt="">
+        </div>
+    </section>
+    <section class="hero3">
+        <div class="left1">
+            <p>
+                <span class="bigtext">What is codding ?  </span>
+                <span class="smalltext">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit natus error porro beatae, dolor nemo voluptatibus sunt, vel similique aut, doloremque quae incidunt ipsa eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellendus et facilis minus fugit, laboriosam natus eius earum sequi consectetur saepe, nisi dignissimos sunt tempora similique velit officia ad laudantium odio facere rerum minima? Accusantium voluptatum labore eligendi. Non, incidunt. Facere itaque mollitia culpa odit labore porro veniam nobis ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta omnis distinctio praesentium enim quam libero architecto fugit quidem incidunt id laudantium laborum illo maxime explicabo optio ducimus officia delectus inventore iusto eligendi perferendis, impedit assumenda nostrum mollitia? Suscipit, ratione iure!
+                </span>
+            </p>
+        </div>
+        <div class="right1">
+        <img src="./secound.jpg" alt="">
+        </div>
+    </section>
+    <footer>
+        COPYRIGHT &copy; ALL Rights Resvered 2023
+    </footer>
+</body>
+</html>
+<script>
+    function shownav(){
+        var show =document.querySelector('.hide')
+        show.style.display = "flex";
+    }
+    function hidnav(){
+        var hide = document.querySelector('.hide')
+        hide.style.display='none'
+    }
+</script>
