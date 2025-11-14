@@ -15,7 +15,7 @@ body{
 
 .todo-container{
     max-width: 550px;
-    background-color:wheat;
+    background-color:white;
     position: relative;
     top: 50%;
     left: 50%;
@@ -39,6 +39,9 @@ img{
     justify-content: space-between;
     margin-top: 50px;
 }
+input::placeholder{
+    color: #88322c;
+}
 
 #input-field{
     width: 70%;
@@ -57,12 +60,12 @@ img{
     border: none;
     font-size: 18px;
     font-weight: 700;
-    background-color: #ada2a2;
+    background-color: #88322c;
     color: white;
     cursor: pointer;
 }
 .btn:hover{
-    background-color: #847d7d;
+    background-color: #ffc470;
 }
 ul li{
     list-style: none;
@@ -91,7 +94,7 @@ ul li::before{
     
 }
 .checked{
-    background-color:#ada2a2 ;
+    background-color:#88322c ;
     color: white;
 }
 .checked::before{
@@ -108,8 +111,15 @@ span{
     font-size: 25px;
     height: 30px;
     width: 30px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
 }
 
 span:hover{
-    background-color: ;
+    background-color: rgb(115, 140, 141);
+}
+ul li.checked span:hover{
+    background-color:black;
+    color: #ffc470;
 }

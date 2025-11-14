@@ -16,11 +16,25 @@ btnel.addEventListener('click',()=>{
         listEle.appendChild(spanEle)
     }
     inputele.value =""
+    savele()
     
 })
 taskEv.addEventListener('click',(e)=>{
 if(e.target.tagName == "LI"){
     e.target.classList.toggle("checked")
+    savele()
+} else if(e.target.tagName == "SPAN"){
+    e.target.parentElement.remove()
+    savele()
 }
 
 })
+
+function savele(){
+    localStorage.setItem("task",taskEv.innerHTML)
+}
+
+function getele(){
+    taskEv.innerHTML = localStorage.getItem("task")
+}
+getele()
