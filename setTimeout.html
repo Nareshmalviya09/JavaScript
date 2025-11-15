@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="bt">press here</button>
+    <button class="stop">stop</button>
+</body>
+</html>
+<script>
+
+
+     const btn = document.querySelector(".bt")
+     const stop = document.querySelector(".stop")
+     btn.addEventListener("click",()=>{
+
+       setid= setTimeout(()=>{
+
+            console.log("u clicked");
+            
+        },1000)
+
+
+        console.log("naresh");
+        
+     })
+
+    stop.addEventListener("click",()=>
+    {
+
+     clearTimeout(setid)
+
+    })
+</script>

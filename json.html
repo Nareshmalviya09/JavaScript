@@ -9,3 +9,21 @@
     
 </body>
 </html>
+<script>
+
+    const obj={
+            name: "naresh",
+            roll: 101,
+            course: "js",
+            fees: "free"
+    
+    }
+
+    const newobj = JSON.stringify(obj) //it conver object into json, json always return a String object
+    console.log(newobj);
+    
+
+    const obj2= JSON.parse(newobj) // it convert json object into normal onject
+    console.log(obj2);
+    
+</script>
